@@ -60,5 +60,22 @@ Avviandoli all'interno del terminale posso avviare e fermare.
 
 se aggiorno la pagina dovrò reincollare il codice, perche il browser memorizza temporaneamente il codice.
 
+se non riesci a fare il copia e incolla nella console di chrome puoi sbloccare la questione con questa guida
 
 
+https://stackoverflow.com/questions/77671024/how-to-re-enable-paste-protection-in-chrome-console
+
+To fix it easily: Just open your chrome browser's DevTool, click on setting's icon which lies in the same line of Console Tab Menu name. It will open Settings, Click on Expermients & Type 'Pasting' in Filter (Refer below snapshot for the same)
+
+Path to Navigate: Open DevTool > Setting's icon > Experminets > Type 'Pasting' in Filter > Show warning about self-XSS when pasting code
+
+To Enable Paste Protection, 'Check' -> Show warning about self-XSS when pasting code.
+
+To Disable Paste Protection, 'Uncheck' -> Show warning about self-XSS when pasting code.
+
+![devconsole](/img/image1.png)
+
+
+In your case, the Checkbox will be 'Unchecked' (Disable), Just 'Check' (Enable) it.
+
+Now, open your chrome browser console & try pasting, it will not allow you to paste.
